@@ -8,11 +8,11 @@ st.set_page_config(page_title='Holidays')
 st.header('Holidays in Different Countries')
 
 # Load an image from a file
-image = Image.open("C:/Users/ALIYA/OneDrive/Documents/Coding_Temple/Week 8/Capstone_2/Two-Letter-Country-Codes.png")
+#image = Image.open("C:/Users/ALIYA/OneDrive/Documents/Coding_Temple/Week 8/Capstone_2/Two-Letter-Country-Codes.png")
 
 # Streamlit UI
 st.title("Example of Country Codes")
-st.image(image, caption="", use_column_width=True)
+#st.image(image, caption="", use_column_width=True)
 
 ### --- Load Dataframe
 input_country_name = st.text_input("Enter a country Code:")
