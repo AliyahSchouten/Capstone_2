@@ -16,7 +16,7 @@ image = Image.open('https://github.com/AliyahSchouten/Capstone_2/blob/510baa8941
 
 # Streamlit UI
 st.title("Example of Country Codes")
-st.text_input('Code Name    |\nAR  Argentina')
+st.text_input('Code Name    |\nAR  Argentina\n')
 st.image(image, caption="", use_column_width=True)
 
 ### --- Load Dataframe
