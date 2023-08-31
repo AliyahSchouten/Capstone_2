@@ -3,12 +3,16 @@ import streamlit as st
 import plotly.express as px
 from PIL import Image
 import requests
+import sys
+import os
+from pathlib import Path
 
 st.set_page_config(page_title='Holidays')
 st.header('Holidays in Different Countries')
 
 # Load an image from a file
-image = Image.open('src/Two-Letter-Country-Codes.png')
+image = Image.open('Two-Letter-Country-Codes.png')
+
 
 # Streamlit UI
 st.title("Example of Country Codes")
