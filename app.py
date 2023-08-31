@@ -11,7 +11,7 @@ st.set_page_config(page_title='Holidays')
 st.header('Holidays in Different Countries')
 
 # Load an image from a file
-image = Image.open('Two-Letter-Country-Codes.png')
+image = Image.open('https://github.com/AliyahSchouten/Capstone_2/blob/510baa89415f1a5a4c296cd284d3c3cec9e1bc66/src/Two-Letter-Country-Codes.png')
 
 
 # Streamlit UI
