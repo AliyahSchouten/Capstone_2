@@ -12,6 +12,8 @@ st.header('Holidays in Different Countries')
 
 # Streamlit UI
 st.title("Example of Country Codes")
+st.text("Code Name||\nAR  Argentina\nAT Austria")
+
 #st.image(image, caption="", use_column_width=True)
 
 ### --- Load Dataframe
