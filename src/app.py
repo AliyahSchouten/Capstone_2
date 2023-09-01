@@ -94,3 +94,20 @@ if input_country_name!='':
     fig = px.bar(holidays_per_date, x='date', y='count', title=f"Holidays per Date in {input_country_name}")
     fig.update_traces(marker=dict(color='red'))
     st.plotly_chart(fig)
+
+    st.header("Summary:")
+    st.text('''
+            The data retrieved from the provided API contains information about public holidays for 
+            various countries. Each entry in the dataset represents a specific public holiday and 
+            includes details such as the country code, date, name of the holiday, and additional 
+            information like whether it's a fixed holiday or a floating holiday. This dataset is a 
+            valuable resource for understanding and tracking public holidays globally, which is 
+            essential for businesses, travel planning, and cultural observances. The data can be 
+            analyzed to identify patterns in holiday distributions across different countries, 
+            helping to uncover cultural and historical significance. This information is vital for 
+            businesses and individuals seeking to coordinate activities, travel plans, and 
+            cross-cultural interactions.
+            
+            After analyzing the data the majorit of the data falls between middle of November to 
+            Middle of January. With around May coming in second. 
+            ''')
