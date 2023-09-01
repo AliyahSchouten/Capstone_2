@@ -46,7 +46,7 @@ st.markdown('''
         TM Turkmenistan, TV Tuvalu, UG Uganda, UA Ukraine, AE United Arab Emirates, GB
         United Kingdom, US United States, UY Uruguay, UZ Uzbekistan, VU Vanuatu, VA 
         Vatican City, VE Venezuela, VN Vietnam, EH Western Sahara, YE Yemen, ZM Zambia,
-         ZW Zimbabwe')
+         ZW Zimbabwe
 ''')
 #st.image(image, caption="", use_column_width=True)
 
