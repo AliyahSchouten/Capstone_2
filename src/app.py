@@ -13,7 +13,7 @@ st.header('Holidays in Different Countries')
 # Streamlit UI
 st.title("Example of Country Codes")
 st.markdown('''
-        AF Afghanistan, AL Albania, DZ Algeria, AD Andorra, AO Angola, AR Argentina,
+        AL Albania, DZ Algeria, AD Andorra, AO Angola, AR Argentina,
         AU Australia, AT Austria, AZ Azerbaijan, BS Bahamas, BH Bahrain, BD Bangladesh,
         BB Barbados, BY Belarus, BE Belgium, BZ Belize, BJ Benin, BT Bhutan, BO Bolivia,
         BA Bosnia and Herzegovina, BW Botswana, BR Brazil, BN Brunei, BG Bulgaria,
@@ -25,7 +25,7 @@ st.markdown('''
         SZ Eswatini, ET Ethiopia, FJ Fiji, FI Finland, FR France, GA Gabon, GM Gambia,GE 
         Georgia, DE Germany, GH Ghana, GR Greece, GD Grenada, GT Guatemala, GN Guinea,GW
         Guinea-Bissau, GY Guyana, HT Haiti, HN Honduras, HU Hungary, IS Iceland, IN India,
-        ID Indonesia, IR Iran, IQ Iraq, IE Ireland, IL Israel, IT Italy, CI Ivory Coast,
+        ID Indonesia, IQ Iraq, IE Ireland, IL Israel, IT Italy, CI Ivory Coast,
         JM Jamaica, JP Japan, JO Jordan, KZ Kazakhstan, KE Kenya, KI Kiribati, XK Kosovo,
         KW Kuwait, KG Kyrgyzstan, LA Laos, LV Latvia, LB Lebanon, LS Lesotho, LR Liberia,
         LY Libya, LI Liechtenstein, LT Lithuania, LU Luxembourg, MG Madagascar, MW Malawi,
@@ -41,8 +41,8 @@ st.markdown('''
         RS Serbia, SC Seychelles, SL Sierra Leone, SG Singapore, SK Slovakia, SI 
         Slovenia, SB Solomon Islands, SO Somalia, ZA South Africa, KR South Korea, SS 
         South Sudan, ES Spain, LK Sri Lanka, SD Sudan, SR Suriname, SE Sweden, CH 
-        Switzerland, SY Syria, TW Taiwan, TJ Tajikistan, TZ Tanzania, TH Thailand, TL 
-        Timor-Leste, TG Togo, TO Tonga, TT Trinidad and Tobago, TN Tunisia, TR Turkey, 
+        Switzerland, SY Syria, TW Taiwan, TZ Tanzania, TH Thailand, TL 
+        Timor-Leste, TG Togo, TO Tonga, TN Tunisia, TR Turkey, 
         TM Turkmenistan, TV Tuvalu, UG Uganda, UA Ukraine, AE United Arab Emirates, GB
         United Kingdom, US United States, UY Uruguay, UZ Uzbekistan, VU Vanuatu, VA 
         Vatican City, VE Venezuela, VN Vietnam, EH Western Sahara, YE Yemen, ZM Zambia,
@@ -91,7 +91,7 @@ if input_country_name!='':
     holidays_per_date = holidays_per_date.sort_values(by='count', ascending=False)
 
     # Create a bar chart using Plotly Express
-    fig = px.bar(holidays_per_date, x='date', y='count', title=f"Holidays per Date in {input_country_name}")
+    fig = px.bar(holidays_per_date, x='Date', y='Amount of Holidays', title=f"Holidays per Date in {input_country_name}")
     fig.update_traces(marker=dict(color='red'))
     st.plotly_chart(fig)
 
@@ -109,5 +109,12 @@ if input_country_name!='':
             cross-cultural interactions.
             
             After analyzing the data the majorit of the data falls between middle of November to 
-            Middle of January. With around May coming in second. 
+            Middle of January. With around May coming in second. With July having the least holidays.
+            One of the main struggles for this promject was pushing this to the public. And then 
+            edditing the errors after I pushed it. Another issue I had was that before the country 
+            code was entered it would cause a bit error for creating the bar chart. So I had to 
+            troubleshoot a way to hide this portion until the country had been sumbitted. When finally 
+            getting it to completion and everthing to work was very satify after the stress of certain 
+            pieces being broken. My favroite pices of a project is always the part that was the hardest
+            to figure out
             ''')
