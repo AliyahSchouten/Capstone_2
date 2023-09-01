@@ -12,7 +12,7 @@ st.header('Holidays in Different Countries')
 
 # Streamlit UI
 st.title("Example of Country Codes")
-st.text('''
+st.markdown('''
         AF Afghanistan, AL Albania, DZ Algeria, AD Andorra, AO Angola, AR Argentina,
         AU Australia, AT Austria, AZ Azerbaijan, BS Bahamas, BH Bahrain, BD Bangladesh,
         BB Barbados, BY Belarus, BE Belgium, BZ Belize, BJ Benin, BT Bhutan, BO Bolivia,
