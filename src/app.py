@@ -91,7 +91,7 @@ if input_country_name!='':
     holidays_per_date = holidays_per_date.sort_values(by='count', ascending=False)
 
     # Create a bar chart using Plotly Express
-    fig = px.bar(holidays_per_date, x='Date', y='Amount of Holidays', title=f"Holidays per Date in {input_country_name}")
+    fig = px.bar(holidays_per_date, x='date', y='count', title=f"Holidays per Date in {input_country_name}")
     fig.update_traces(marker=dict(color='red'))
     st.plotly_chart(fig)
 
